@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Container from "./Container";
 import Logo from "./Logo";
+import MobileMenu from "./MobileMenu";
 import { navigation } from "@/data/navigation";
 
 export default function Navbar() {
@@ -10,7 +11,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <Logo />
 
-          <nav className="hidden gap-8 md:flex">
+          <nav className="hidden gap-6 md:flex lg:gap-8">
             {navigation.map((item) => (
               <Link
                 key={item.href}
@@ -21,6 +22,8 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
+
+          <MobileMenu />
         </div>
       </Container>
     </header>
