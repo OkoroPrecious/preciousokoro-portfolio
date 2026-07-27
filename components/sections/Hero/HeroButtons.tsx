@@ -14,13 +14,16 @@ export default function HeroButtons() {
         <ArrowRight size={18} />
       </Link>
 
-      <Link
+      <a
         href={hero.buttons.secondary.href}
+        download
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-700 px-6 py-3 text-white transition hover:border-slate-500 sm:w-auto"
       >
         <Download size={18} />
         {hero.buttons.secondary.text}
-      </Link>
+      </a>
 
     </div>
   );

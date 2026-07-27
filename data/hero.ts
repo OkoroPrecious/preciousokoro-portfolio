@@ -16,7 +16,7 @@ export const hero = {
 
     secondary: {
       text: "Download Resume",
-      href: "/resume",
+      href: "/precious-okoro-resume.pdf",
     },
   },
 

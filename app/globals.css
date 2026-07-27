@@ -126,5 +126,8 @@
   }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
+    /* offset for the 4rem (h-16) sticky header so anchors aren't hidden */
+    scroll-padding-top: 5rem;
   }
 }
