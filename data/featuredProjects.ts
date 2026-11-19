@@ -60,45 +60,99 @@ export const featuredProjects: FeaturedProject[] = [
   },
 
   {
-    title: "Hospital Dashboard",
+    title: "Etta Atlantic Memorial",
 
-    subtitle: "Healthcare Administration Dashboard",
+    subtitle: "Hospital & Diagnostic Centre Website",
 
     description:
-      "A role-based hospital administration dashboard for managing appointments, analytics, patients, and medical records.",
+      "The public website for Etta Atlantic Memorial Hospital and Diagnostic Centre. Patients can browse services, health packages, and doctors, read testimonials, and book appointments. It is built as a fast, statically exported site.",
 
-    image: "/images/projects/underconstruction.png",
+    image: "/images/projects/etta-atlantic.jpg",
 
     technologies: [
-      "React",
       "Next.js",
+      "React",
       "TypeScript",
       "Tailwind CSS",
+      "Zod",
+      "Storybook",
+      "Vitest",
     ],
 
     responsibilities: [
-      "Designed responsive dashboard layouts.",
-      "Developed reusable dashboard components.",
-      "Integrated REST APIs.",
-      "Built analytics and reporting screens.",
+      "Built the full site with Next.js 16 static export, so it is served as plain HTML with no server to run.",
+      "Structured content into modules with Zod-validated schemas for services, packages, doctors, and hospital info.",
+      "Built a design system of tokens and atomic components, documented in Storybook with accessibility checks.",
+      "Implemented SEO: canonical URLs, sitemap, robots rules, and per-page metadata.",
+      "Wrote unit tests with Vitest and Testing Library, and enforced type-aware linting and formatting.",
     ],
 
     features: [
-      "Analytics Dashboard",
-      "Appointment Management",
-      "Patient Records",
-      "Responsive Layout",
-      "Notifications",
+      "Services & Specialties",
+      "Health Packages with Brochures",
+      "Doctors Directory",
+      "Patient Testimonials",
+      "Appointment Booking CTAs",
+      "Social & Contact Integration",
+      "Responsive Design",
     ],
 
     results: [
-      "Improved workflow efficiency.",
-      "Modernized the dashboard experience.",
-      "Optimized UI performance.",
+      "Shipped a fast, low-cost static site the hospital can host anywhere.",
+      "Made content easy to update safely through typed, validated data modules.",
+      "Kept the UI consistent through a documented component library.",
     ],
 
     github: null,
 
-    live: null,
+    live: "https://www.ettaatlantic.com",
+  },
+
+  {
+    title: "BALEPEPE",
+
+    subtitle: "Fashion E-commerce Store",
+
+    description:
+      "A custom online store for the fashion brand Maison BALEPEPE. It replaced the brand's old WooCommerce site and adds live Paystack checkout and automatic order notifications.",
+
+    image: "/images/projects/balepepe.jpg",
+
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Motion",
+      "Paystack",
+      "Node.js",
+    ],
+
+    responsibilities: [
+      "Built the storefront end to end: home, shop, product detail, search, cart, and checkout.",
+      "Integrated Paystack with server-side cart re-pricing and a signature-verified payment webhook.",
+      "Automated order notifications to WhatsApp, Gmail, and Google Sheets.",
+      "Migrated from WooCommerce with permanent redirects that preserve legacy URLs and SEO.",
+      "Applied the client's design corrections across phone and desktop layouts.",
+    ],
+
+    features: [
+      "Product Catalogue with Filters",
+      "Search",
+      "Cart Drawer",
+      "Paystack Checkout",
+      "Order Confirmation & Verification",
+      "Newsletter & Cookie Consent",
+      "Responsive Design",
+    ],
+
+    results: [
+      "Moved the brand off WordPress to a faster custom storefront.",
+      "Gave the client secure online payments and instant order alerts.",
+      "Kept existing search rankings and links working through the migration.",
+    ],
+
+    github: null,
+
+    live: "https://balepepe.com",
   },
 ];
